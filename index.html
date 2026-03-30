@@ -11,6 +11,12 @@
 
     <!-- STYLES -->
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- CDN ICON (Font Awesome) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <!-- NAV -->
@@ -24,7 +30,7 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#services">Services</a></li>
       </ul>
-      <a href="#contact" class="nav-cta">Hire Me</a>
+      <a href="#contact" class="nav-cta">Let's Work Together</a>
     </nav>
 
     <!-- HERO -->
@@ -54,7 +60,18 @@
       </div>
       <div class="hero-right">
         <div class="profile-card">
-          <div class="profile-avatar">Y</div>
+          <div class="profile-avatar">
+            <img
+              src="assets/img/profile.jpg"
+              alt="Alsya Kanaya Dzikra"
+              onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'flex';
+              "
+            />
+
+            <span class="avatar-fallback">AK</span>
+          </div>
           <h3>Alsya Kanaya Dzikra</h3>
           <p>Fullstack Developer · Magelang, ID</p>
           <div class="profile-stats">
@@ -331,22 +348,32 @@
         terbuka untuk peluang baru.
       </p>
       <div class="contact-actions">
-        <a href="mailto:hello@yourname.com" class="btn-light">📩 Email Saya</a>
+        <a href="mailto:alsyakanayadzikra@gmail.com" class="btn-light"
+          >📩 Email Saya</a
+        >
         <a href="#" class="btn-outline-light">Download CV</a>
       </div>
       <div class="social-links">
-        <a href="#" class="social-link" title="GitHub">GH</a>
-        <a href="#" class="social-link" title="LinkedIn">in</a>
-        <a href="#" class="social-link" title="Twitter/X">𝕏</a>
-        <a href="#" class="social-link" title="Instagram">IG</a>
+        <a href="#" class="social-link github" title="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="#" class="social-link linkedin" title="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a href="#" class="social-link twitter" title="Twitter/X">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a href="#" class="social-link instagram" title="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
       </div>
     </section>
 
     <footer>
-      <p>
-        © 2025 <span>Alsya Kanaya Dzikra</span> — Handcrafted with ❤️ &amp;
-        Laravel
-      </p>
+      <p>© 2025 <span>Alsya Kanaya Dzikra</span> — Handcrafted with ❤️;</p>
     </footer>
 
     <script src="script.js"></script>
